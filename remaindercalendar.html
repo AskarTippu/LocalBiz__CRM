@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reminder Calendar - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html" class="active">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Reminder Calendar</h1>
+        <div class="top-bar-right">
+          <a href="#" class="cta-btn">+ Add Reminder</a>
+        </div>
+      </header>
+
+      <div class="calendar-wrapper">
+        <div class="calendar-header">
+          <button class="nav-btn">&laquo;</button>
+          <h2 id="currentMonth">January 2026</h2>
+          <button class="nav-btn">&raquo;</button>
+        </div>
+
+        <div class="calendar-grid">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+
+          <div class="calendar-day empty"></div>
+          <div class="calendar-day empty"></div>
+          <div class="calendar-day empty"></div>
+          <div class="calendar-day empty"></div>
+          <div class="calendar-day">
+            <div class="day-number">1</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">2</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">3</div>
+          </div>
+
+          <div class="calendar-day">
+            <div class="day-number">4</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">5</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">6</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">7</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">8</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">9</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">10</div>
+          </div>
+
+          <div class="calendar-day">
+            <div class="day-number">11</div>
+          </div>
+          <div class="calendar-day has-event">
+            <div class="day-number">12</div>
+            <div class="day-event">Follow-up</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">13</div>
+          </div>
+          <div class="calendar-day has-event">
+            <div class="day-number">14</div>
+            <div class="day-event">Call John</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">15</div>
+          </div>
+          <div class="calendar-day has-event">
+            <div class="day-number">16</div>
+            <div class="day-event">Invoice due</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">17</div>
+          </div>
+
+          <div class="calendar-day has-event today">
+            <div class="day-number">18</div>
+            <div class="day-event">Review meeting</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">19</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">20</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">21</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">22</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">23</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">24</div>
+          </div>
+
+          <div class="calendar-day">
+            <div class="day-number">25</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">26</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">27</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">28</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">29</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">30</div>
+          </div>
+          <div class="calendar-day">
+            <div class="day-number">31</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reminders-list">
+        <h3>Upcoming Reminders</h3>
+        <div class="reminder-item">
+          <div class="reminder-content">
+            <h4>Follow-up with Jane Smith</h4>
+            <p>January 12, 2026 at 2:00 PM</p>
+          </div>
+          <button class="reminder-action">✓</button>
+        </div>
+        <div class="reminder-item">
+          <div class="reminder-content">
+            <h4>Call John Doe</h4>
+            <p>January 14, 2026 at 10:00 AM</p>
+          </div>
+          <button class="reminder-action">✓</button>
+        </div>
+        <div class="reminder-item">
+          <div class="reminder-content">
+            <h4>Invoice #1002 Due</h4>
+            <p>January 16, 2026</p>
+          </div>
+          <button class="reminder-action">✓</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

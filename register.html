@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+  <div class="register-container">
+    <div class="register-card">
+      <h1>Create Account</h1>
+      <p class="register-subtitle">Join LocalBiz CRM today</p>
+      <form class="register-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a strong password" required>
+          <small class="password-hint">Min 8 characters, 1 uppercase, 1 number</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirm">Confirm Password</label>
+          <input type="password" id="confirm" placeholder="Confirm your password" required>
+        </div>
+        
+        <!-- <div class="form-group checkbox">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the <a href="#" class="link">Terms & Conditions</a></label>
+        </div>
+         -->
+        <button type="submit" class="register-btn">Create Account</button>
+      </form>
+      
+      <div class="register-footer">
+        <p>Already have an account? <a href="./login.html" class="link">Login</a></p>
+      </div>
+    </div>
+    
+    <div class="register-side">
+      <h2>Why Join LocalBiz CRM?</h2>
+      <ul class="benefits">
+        <li>✓ Manage customers efficiently</li>
+        <li>✓ Track sales and billing</li>
+        <li>✓ Schedule reminders</li>
+        <li>✓ Real-time analytics</li>
+        <li>✓ 24/7 Support</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

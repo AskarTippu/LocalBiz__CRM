@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Overview - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html" class="active">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Billing Overview</h1>
+        <div class="top-bar-right">
+          <a href="#" class="cta-btn">+ Generate Invoice</a>
+        </div>
+      </header>
+
+      <div class="billing-stats">
+        <div class="stat-card">
+          <h4>Total Revenue</h4>
+          <p class="stat-value">$15,250</p>
+          <p class="stat-change positive">↑ 12% from last month</p>
+        </div>
+        <div class="stat-card">
+          <h4>Outstanding Invoices</h4>
+          <p class="stat-value">$3,450</p>
+          <p class="stat-change negative">4 unpaid invoices</p>
+        </div>
+        <div class="stat-card">
+          <h4>Paid This Month</h4>
+          <p class="stat-value">$5,200</p>
+          <p class="stat-change positive">87% paid on time</p>
+        </div>
+        <div class="stat-card">
+          <h4>Upcoming Due</h4>
+          <p class="stat-value">$2,100</p>
+          <p class="stat-change">Due in 5 days</p>
+        </div>
+      </div>
+
+      <section class="billing-controls">
+        <div class="search-box">
+          <input type="text" placeholder="Search by invoice ID or customer..." class="search-input">
+        </div>
+        <div class="filter-controls">
+          <select class="filter-select">
+            <option value="">All Status</option>
+            <option value="Paid">Paid</option>
+            <option value="Unpaid">Unpaid</option>
+            <option value="Overdue">Overdue</option>
+            <option value="Draft">Draft</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="table-wrapper">
+        <table class="billing-table">
+          <thead>
+            <tr>
+              <th>Invoice ID</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Due Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="invoice-row">
+              <td class="invoice-id">#1005</td>
+              <td>John Doe</td>
+              <td>2026-01-12</td>
+              <td class="amount">$500.00</td>
+              <td><span class="status-badge status-active">Paid</span></td>
+              <td>2026-01-19</td>
+              <td class="action-buttons">
+                <a href="#" class="action-btn view-btn" title="View">View</a>
+                <a href="#" class="action-btn edit-btn" title="Edit">Edit</a>
+                <a href="#" class="action-btn delete-btn" title="Delete">Delete</a>
+              </td>
+            </tr>
+            <tr class="invoice-row">
+              <td class="invoice-id">#1004</td>
+              <td>Jane Smith</td>
+              <td>2026-01-10</td>
+              <td class="amount">$350.00</td>
+              <td><span class="status-badge status-inactive">Unpaid</span></td>
+              <td>2026-01-17</td>
+              <td class="action-buttons">
+                <a href="#" class="action-btn view-btn" title="View">View</a>
+                <a href="#" class="action-btn edit-btn" title="Edit">Edit</a>
+                <a href="#" class="action-btn delete-btn" title="Delete">Delete</a>
+              </td>
+            </tr>
+            <tr class="invoice-row">
+              <td class="invoice-id">#1003</td>
+              <td>Mike Johnson</td>
+              <td>2026-01-05</td>
+              <td class="amount">$750.00</td>
+              <td><span class="status-badge status-pending">Overdue</span></td>
+              <td>2026-01-12</td>
+              <td class="action-buttons">
+                <a href="#" class="action-btn view-btn" title="View">View</a>
+                <a href="#" class="action-btn edit-btn" title="Edit">Edit</a>
+                <a href="#" class="action-btn delete-btn" title="Delete">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-btn" disabled>&laquo; Previous</button>
+        <span class="pagination-info">Page 1 of 3</span>
+        <button class="pagination-btn">Next &raquo;</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

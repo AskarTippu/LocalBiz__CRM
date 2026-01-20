@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer List - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html" class="active">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Customer List</h1>
+        <div class="top-bar-right">
+          <a href="./addcustomer.html" class="cta-btn">+ Add Customer</a>
+        </div>
+      </header>
+
+      <section class="customer-controls">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search by name, email, or phone..." class="search-input">
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="filter-controls">
+          <select id="statusFilter" class="filter-select">
+            <option value="">All Status</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+            <option value="Pending">Pending</option>
+          </select>
+          <span class="result-count">Total Customers: <strong id="customerCount">2</strong></span>
+        </div>
+      </section>
+
+      <div class="table-wrapper">
+        <table class="customers-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Location</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="customer-row">
+              <td class="customer-name">John Doe</td>
+              <td>john@example.com</td>
+              <td>+1 (555) 123-4567</td>
+              <td>New York, NY</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              
+              
+              
+            </tr>
+            <tr class="customer-row">
+              <td class="customer-name">Jane Smith</td>
+              <td>jane@example.com</td>
+              <td>+1 (555) 987-6543</td>
+              <td>Los Angeles, CA</td>
+              <td><span class="status-badge status-inactive">Inactive</span></td>
+              
+            </tr>
+            <tr class="customer-row">
+              <td class="customer-name">Mike Johnson</td>
+              <td>mike@example.com</td>
+              <td>+1 (555) 456-7890</td>
+              <td>Chicago, IL</td>
+              <td><span class="status-badge status-pending">Pending</span></td>
+              
+            </tr>
+            <tr class="customer-row">
+              <td class="customer-name">Sarah Williams</td>
+              <td>sarah@example.com</td>
+              <td>+1 (555) 234-5678</td>
+              <td>Houston, TX</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-btn" disabled>&laquo; Previous</button>
+        <span class="pagination-info">Page 1 of 5</span>
+        <button class="pagination-btn">Next &raquo;</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

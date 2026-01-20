@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Profile - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html" class="active">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Customer Profile</h1>
+        <div class="top-bar-right">
+          <button class="cta-btn">Edit Profile</button>
+          <button class="cta-btn">Delete Customer</button>
+        </div>
+      </header>
+
+      <div class="profile-wrapper">
+        <div class="profile-header">
+          <div class="profile-avatar">JD</div>
+          <div class="profile-info">
+            <h2>John Doe</h2>
+            <p class="status-badge status-active">Active Customer</p>
+          </div>
+        </div>
+
+        <div class="profile-grid">
+          <div class="profile-card">
+            <h3>Contact Information</h3>
+            <div class="profile-item">
+              <span class="label">Email:</span>
+              <span class="value">john@example.com</span>
+            </div>
+            <div class="profile-item">
+              <span class="label">Phone:</span>
+              <span class="value">+1 (555) 123-4567</span>
+            </div>
+            <div class="profile-item">
+              <span class="label">Address:</span>
+              <span class="value">123 Main St, New York, NY 10001</span>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <h3>Business Information</h3>
+            <div class="profile-item">
+              <span class="label">Company:</span>
+              <span class="value">Tech Solutions Inc.</span>
+            </div>
+            <div class="profile-item">
+              <span class="label">Industry:</span>
+              <span class="value">Technology</span>
+            </div>
+            <div class="profile-item">
+              <span class="label">Customer Since:</span>
+              <span class="value">January 15, 2025</span>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <h3>Quick Stats</h3>
+            <div class="stat-item">
+              <div class="stat-number">12</div>
+              <div class="stat-label">Total Visits</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">$2,500</div>
+              <div class="stat-label">Total Revenue</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Active Invoices</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-tabs">
+          <button class="tab-btn active" data-tab="visits">Visit History</button>
+          <button class="tab-btn" data-tab="billing">Billing</button>
+          <button class="tab-btn" data-tab="notes">Notes</button>
+        </div>
+
+        <div class="tab-content active" id="visits">
+          <h3>Recent Visits</h3>
+          <table class="profile-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Purpose</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2026-01-15</td>
+                <td>Follow-up</td>
+                <td>Discussed new product features</td>
+              </tr>
+              <tr>
+                <td>2026-01-10</td>
+                <td>Support</td>
+                <td>Resolved technical issue</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-content" id="billing">
+          <h3>Billing Information</h3>
+          <table class="profile-table">
+            <thead>
+              <tr>
+                <th>Invoice</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1005</td>
+                <td>2026-01-12</td>
+                <td>$500</td>
+                <td><span class="status-badge status-active">Paid</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-content" id="notes">
+          <h3>Customer Notes</h3>
+          <p>Very responsive customer. Prefers email communication. Interested in quarterly reviews.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

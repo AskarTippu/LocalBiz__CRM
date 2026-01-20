@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Customer - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html" class="active">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+    
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Add Customer</h1>
+        <div class="top-bar-right">
+          <span>Create New Customer Record</span>
+        </div>
+      </header>
+
+      <div class="form-wrapper">
+        <form class="add-customer-form">
+          <div class="form-section">
+            <h3>Basic Information</h3>
+            
+            <div class="form-group">
+              <label for="fullname">Full Name *</label>
+              <input type="text" id="fullname" placeholder="Enter customer full name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="customer@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 123-4567" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="Street address">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="state">State/Province</label>
+                <input type="text" id="state" placeholder="State">
+              </div>
+              <div class="form-group">
+                <label for="zip">ZIP/Postal Code</label>
+                <input type="text" id="zip" placeholder="12345">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Additional Information</h3>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Company name">
+              </div>
+              <div class="form-group">
+                <label for="industry">Industry</label>
+                <select id="industry">
+                  <option value="">Select industry</option>
+                  <option value="Retail">Retail</option>
+                  <option value="Service">Service</option>
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <textarea id="notes" placeholder="Add any additional notes about the customer..." rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Add Customer</button>
+            <button type="reset" class="btn-secondary">Clear Form</button>
+            <a href="customerlist.html" class="btn-tertiary">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

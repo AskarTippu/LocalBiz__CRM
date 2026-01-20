@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html" class="active">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Notifications</h1>
+        <div class="top-bar-right">
+          <button class="cta-btn">Mark All as Read</button>
+        </div>
+      </header>
+
+      <div class="notification-container">
+        <h3>Recent Notifications</h3>
+        <div class="notification-list">
+          <div class="notification-item">
+            <div class="notification-content">
+              <h4>New Customer Added</h4>
+              <p>John Doe has been added to your customer list.</p>
+              <span class="notification-time">2 minutes ago</span>
+            </div>
+            <button class="notification-action">Mark as Read</button>
+          </div>
+
+          <div class="notification-item">
+            <div class="notification-content">
+              <h4>Invoice #1002 Unpaid</h4>
+              <p>Invoice #1002 is now overdue. Follow up with the customer.</p>
+              <span class="notification-time">1 hour ago</span>
+            </div>
+            <button class="notification-action">Mark as Read</button>
+          </div>
+
+          <div class="notification-item">
+            <div class="notification-content">
+              <h4>Scheduled Reminder</h4>
+              <p>Follow-up call with Jane Smith scheduled for today at 3:00 PM.</p>
+              <span class="notification-time">3 hours ago</span>
+            </div>
+            <button class="notification-action">Mark as Read</button>
+          </div>
+
+          <div class="notification-item">
+            <div class="notification-content">
+              <h4>Payment Received</h4>
+              <p>Payment of $500 received from Tech Solutions Inc. for Invoice #1001.</p>
+              <span class="notification-time">5 hours ago</span>
+            </div>
+            <button class="notification-action">Mark as Read</button>
+          </div>
+
+          <div class="notification-item">
+            <div class="notification-content">
+              <h4>New Visit Logged</h4>
+              <p>Visit to Mike Johnson completed and logged in the system.</p>
+              <span class="notification-time">1 day ago</span>
+            </div>
+            <button class="notification-action">Mark as Read</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Support - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html" class="active">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Help & Support</h1>
+        <div class="top-bar-right">
+          <span>Get answers to your questions</span>
+        </div>
+      </header>
+
+      <div class="help-wrapper">
+        <div class="search-section">
+          <div class="search-box">
+            <input type="text" id="helpSearch" placeholder="Search help topics..." class="search-input">
+            <span class="search-icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="help-content">
+          <div class="help-section">
+            <h2>Getting Started</h2>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I add a new customer?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To add a new customer:</p>
+                <ol>
+                  <li>Go to the <strong>Customers</strong> section from the sidebar</li>
+                  <li>Click the <strong>"+ Add Customer"</strong> button</li>
+                  <li>Fill in the customer details (Name, Email, Phone, Address)</li>
+                  <li>Add any additional information in the Notes section</li>
+                  <li>Click <strong>"Add Customer"</strong> to save</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I view customer details?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To view a customer's profile:</p>
+                <ol>
+                  <li>Go to <strong>Customers</strong> section</li>
+                  <li>Find the customer in the list</li>
+                  <li>Click the <strong>View (👁️)</strong> button to see their full profile</li>
+                  <li>From the profile, you can view their visit history, billing info, and notes</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I search for a customer?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To find a specific customer:</p>
+                <ol>
+                  <li>Go to the <strong>Customers</strong> page</li>
+                  <li>Use the search bar at the top to search by name, email, or phone</li>
+                  <li>Results will filter automatically as you type</li>
+                  <li>You can also use the Status filter to narrow results</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-section">
+            <h2>Billing & Invoices</h2>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I create an invoice?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To generate a new invoice:</p>
+                <ol>
+                  <li>Navigate to <strong>Billing</strong> section</li>
+                  <li>Click <strong>"+ Generate Invoice"</strong> button</li>
+                  <li>Select the customer and enter invoice details</li>
+                  <li>Add items/services with amounts</li>
+                  <li>Set the due date and click <strong>"Generate"</strong></li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I track unpaid invoices?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To view unpaid invoices:</p>
+                <ol>
+                  <li>Go to <strong>Billing</strong> page</li>
+                  <li>Use the Status filter dropdown</li>
+                  <li>Select <strong>"Unpaid"</strong> or <strong>"Overdue"</strong></li>
+                  <li>The list will show only unpaid/overdue invoices</li>
+                  <li>Click View to see invoice details</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I record a payment?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To record an invoice payment:</p>
+                <ol>
+                  <li>Go to <strong>Billing</strong> section</li>
+                  <li>Find the invoice in the list</li>
+                  <li>Click the <strong>Edit (✏️)</strong> button</li>
+                  <li>Change status from "Unpaid" to "Paid"</li>
+                  <li>Add payment date and method</li>
+                  <li>Click <strong>"Update"</strong> to save</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-section">
+            <h2>Reminders & Calendar</h2>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I create a reminder?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To add a new reminder:</p>
+                <ol>
+                  <li>Go to <strong>Reminders</strong> section</li>
+                  <li>Click <strong>"+ Add Reminder"</strong> button</li>
+                  <li>Enter reminder details (Customer, Date, Time, Description)</li>
+                  <li>Click <strong>"Create Reminder"</strong></li>
+                  <li>You'll receive notifications on the scheduled date</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I view the calendar?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To view your calendar:</p>
+                <ol>
+                  <li>Go to <strong>Reminders</strong> section</li>
+                  <li>The calendar displays all reminders for the current month</li>
+                  <li>Dates with events show the reminder details</li>
+                  <li>Use navigation arrows to switch between months</li>
+                  <li>Below the calendar is a list of upcoming reminders</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-section">
+            <h2>Account & Settings</h2>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I change my password?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To change your password:</p>
+                <ol>
+                  <li>Go to <strong>Settings</strong></li>
+                  <li>Click <strong>"Security"</strong> tab</li>
+                  <li>Enter your current password</li>
+                  <li>Enter your new password twice</li>
+                  <li>Click <strong>"Update Password"</strong></li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I update my profile?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To update your account information:</p>
+                <ol>
+                  <li>Go to <strong>Settings</strong></li>
+                  <li>Edit your name, email, phone, or company</li>
+                  <li>Adjust your timezone and preferences</li>
+                  <li>Click <strong>"Save Changes"</strong> at the bottom</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I manage notifications?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>To control your notifications:</p>
+                <ol>
+                  <li>Go to <strong>Settings</strong></li>
+                  <li>Click <strong>"Notifications"</strong> tab</li>
+                  <li>Toggle notification types on/off as needed</li>
+                  <li>Choose which events trigger email notifications</li>
+                  <li>Click <strong>"Save Preferences"</strong></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-section">
+            <h2>Contact Support</h2>
+            
+            <div class="support-box">
+              <h3>Still need help?</h3>
+              <p>If you can't find the answer to your question, please contact our support team:</p>
+              <ul>
+                <li><strong>Email:</strong> support@localbizcrm.com</li>
+                <li><strong>Phone:</strong> 1-800-123-4567</li>
+                <li><strong>Hours:</strong> Monday - Friday, 9 AM - 6 PM EST</li>
+              </ul>
+              <button class="btn-primary">Contact Support</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Simple FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        const isOpen = answer.style.display === 'block';
+        
+        // Close all other FAQs
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+          ans.style.display = 'none';
+        });
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+          toggle.textContent = '+';
+        });
+        
+        // Toggle current FAQ
+        if (!isOpen) {
+          answer.style.display = 'block';
+          this.querySelector('.faq-toggle').textContent = '−';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

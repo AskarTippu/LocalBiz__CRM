@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics - LocalBiz CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>LocalBiz CRM</h2>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./customerlist.html">Customers</a>
+      <a href="./addcustomer.html">Add Customer</a>
+      <a href="./customerprofile.html">Customer Profile</a>
+      <a href="./visithistory.html">Visit History</a>
+      <a href="./billingoverview.html">Billing</a>
+      <a href="./remaindercalendar.html">Reminders</a>
+      <a href="./analytics.html" class="active">Analytics</a>
+      <a href="./notifications.html">Notifications</a>
+      <a href="./settings.html">Settings</a>
+      <a href="./help.html">Help</a>
+      <a href="./login.html">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Analytics Dashboard</h1>
+        <div class="top-bar-right">
+          <select class="filter-select">
+            <option value="month">This Month</option>
+            <option value="quarter">This Quarter</option>
+            <option value="year">This Year</option>
+          </select>
+        </div>
+      </header>
+
+      <div class="analytics-stats">
+        <div class="stat-card">
+          <h4>Total Customers</h4>
+          <p class="stat-value">156</p>
+          <p class="stat-change positive">↑ 15 new this month</p>
+        </div>
+        <div class="stat-card">
+          <h4>Total Revenue</h4>
+          <p class="stat-value">$45,230</p>
+          <p class="stat-change positive">↑ 22% vs last month</p>
+        </div>
+        <div class="stat-card">
+          <h4>Active Invoices</h4>
+          <p class="stat-value">23</p>
+          <p class="stat-change negative">↓ 4 overdue</p>
+        </div>
+        <div class="stat-card">
+          <h4>Customer Visits</h4>
+          <p class="stat-value">287</p>
+          <p class="stat-change positive">↑ 42 vs last month</p>
+        </div>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="chart-container">
+          <h3>Revenue Trend</h3>
+          <div class="chart-placeholder">
+            <div class="chart-bar" style="height: 45%;"></div>
+            <div class="chart-bar" style="height: 62%;"></div>
+            <div class="chart-bar" style="height: 78%;"></div>
+            <div class="chart-bar" style="height: 65%;"></div>
+            <div class="chart-bar" style="height: 85%;"></div>
+            <div class="chart-bar" style="height: 92%;"></div>
+            <div class="chart-bar" style="height: 88%;"></div>
+            <div class="chart-bar" style="height: 95%;"></div>
+            <div class="chart-bar" style="height: 80%;"></div>
+            <div class="chart-bar" style="height: 72%;"></div>
+            <div class="chart-bar" style="height: 68%;"></div>
+            <div class="chart-bar" style="height: 75%;"></div>
+          </div>
+          <p class="chart-label">Monthly Revenue (Last 12 Months)</p>
+        </div>
+
+        <div class="chart-container">
+          <h3>Customer Status</h3>
+          <div class="pie-chart">
+            <div class="pie-segment active" title="Active: 120"></div>
+            <div class="pie-segment inactive" title="Inactive: 28"></div>
+            <div class="pie-segment pending" title="Pending: 8"></div>
+          </div>
+          <div class="pie-legend">
+            <div class="legend-item">
+              <span class="legend-color active"></span> Active (120)
+            </div>
+            <div class="legend-item">
+              <span class="legend-color inactive"></span> Inactive (28)
+            </div>
+            <div class="legend-item">
+              <span class="legend-color pending"></span> Pending (8)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-customers">
+        <h3>Top 5 Customers by Revenue</h3>
+        <table class="analytics-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Customer Name</th>
+              <th>Total Revenue</th>
+              <th>Visit Count</th>
+              <th>Avg Transaction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="customer-name">Tech Solutions Inc.</td>
+              <td>$12,500</td>
+              <td>18</td>
+              <td>$694</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="customer-name">Global Industries</td>
+              <td>$10,200</td>
+              <td>15</td>
+              <td>$680</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="customer-name">Digital Marketing Co.</td>
+              <td>$8,750</td>
+              <td>12</td>
+              <td>$729</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="customer-name">Financial Services Ltd.</td>
+              <td>$7,900</td>
+              <td>10</td>
+              <td>$790</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="customer-name">Retail Solutions</td>
+              <td>$5,880</td>
+              <td>8</td>
+              <td>$735</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="analytics-summary">
+        <h3>Performance Summary</h3>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <h5>Average Customer Lifetime Value</h5>
+            <p class="summary-value">$290</p>
+          </div>
+          <div class="summary-item">
+            <h5>Customer Retention Rate</h5>
+            <p class="summary-value">87%</p>
+          </div>
+          <div class="summary-item">
+            <h5>Invoice Payment Rate</h5>
+            <p class="summary-value">94%</p>
+          </div>
+          <div class="summary-item">
+            <h5>Avg Days to Payment</h5>
+            <p class="summary-value">12 days</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
