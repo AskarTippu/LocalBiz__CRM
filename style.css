@@ -35,18 +35,20 @@ header nav a {
 .dashboard-container {
   display: flex;
   gap: 20px;
+  height: max-content;
   padding: 20px;
+  font-size: medium;
   background: #f9f9f9;
 }
 
 /* -------------------- Sidebar -------------------- */
 .sidebar {
   width: 220px;
+  height: 730px;
   background: #0a74da;
   color: white;
   padding: 20px;
-  height: fit-content;
-  position: sticky;
+  position: static;
   top: 20px;
   border-radius: 8px;
   flex-shrink: 0;
@@ -215,7 +217,7 @@ tr:hover { background: #f1f1f1; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0%;
 }
 
 .register-container {
