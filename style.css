@@ -2452,7 +2452,15 @@ footer { text-align: center; padding: 15px; background: #222; color: white; }
   font-weight: 700;
   margin: 0;
 }
-
+.bell{
+  font-size: 24px;
+  background-color: #0a74da;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
 /* Responsive Dashboard */
 @media(max-width: 1200px) {
   .dashboard-grid {
